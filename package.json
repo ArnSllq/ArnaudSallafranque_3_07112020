@@ -1,0 +1,19 @@
+{
+  "name": "p3anim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnSllq/P3Anim.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArnSllq/P3Anim/issues"
+  },
+  "homepage": "https://github.com/ArnSllq/P3Anim#readme"
+}
