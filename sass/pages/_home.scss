@@ -81,8 +81,11 @@ h2 {
     .howitworks-rule {
         width: 80%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
+        p {
+            width: 70%;
+        }
         }
 }
 .grey-bg {
