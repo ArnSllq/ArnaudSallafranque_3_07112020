@@ -78,3 +78,55 @@ h2 {
         text-align: center;
         }
 }
+
+.restaurants {
+
+    .restaurants-menu { 
+        border-radius: 25px;
+        position: relative;
+        background-color: crimson;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 240px;
+    }
+
+    .restaurants-img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 25px 25px 0px 0px;
+    }
+    .restaurants-new {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        color: cadetblue;
+        background-color: chartreuse;
+        padding: 7px 7px 7px 7px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 15px;
+        margin-left: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 50%;
+    }
+    strong {
+        font-weight: bold;
+    }
+    .restaurants-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-between;
+        height: 60px;
+        width: 100%;
+        }
+        .heart {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+}

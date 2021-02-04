@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Shrikhand";
-  src: url("font/shrikhand/Shrikhand-Regular.otf") format("otf");
+  src: url("font/shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "Roboto";
   src: url("font/roboto/Roboto-Regular.ttf") format("truetype");
 }
@@ -28,6 +30,33 @@ header {
   height: 40px;
   background-color: gainsboro;
   font-weight: bold;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 200px;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 10px;
+  padding-top: 15px;
+}
+footer ul {
+  list-style: none;
+  padding: 15px;
+  margin: 0px;
+}
+footer li {
+  margin-bottom: 10px;
+}
+footer .footer-picto {
+  margin-right: 10px;
 }
 
 body {
@@ -105,6 +134,54 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.restaurants .restaurants-menu {
+  border-radius: 25px;
+  position: relative;
+  background-color: crimson;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 240px;
+}
+.restaurants .restaurants-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 25px 25px 0px 0px;
+}
+.restaurants .restaurants-new {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: cadetblue;
+  background-color: chartreuse;
+  padding: 7px 7px 7px 7px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.restaurants p {
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 50%;
+}
+.restaurants strong {
+  font-weight: bold;
+}
+.restaurants .restaurants-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+}
+.restaurants .heart {
+  margin-right: 15px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
