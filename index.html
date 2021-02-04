@@ -13,10 +13,10 @@
         </header>
 
         <main>
-            <section class="location">
+            <div class="location">
                 <i class="fas fa-map-marker-alt location-logo"></i>
                 <input class="location-area" type="search" name="search" placeholder="Paris, Belleville">
-            </section>
+            </div>
             <section class="booking">
                 <h1 class="booking-title">Réservez le menu qui vous convient</h1>
                 <p class="booking-subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
@@ -24,24 +24,27 @@
             </section>
             <section class="howitworks">
                 <h2>Fonctionnement</h2>
-                    <div class=howitworks-block>
+                    <div class="howitworks-block grey-bg">
                         <p class="howitworks-list">1</p>
-                        <p class="howitworks-rule"><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</p>
+                        <div class="howitworks-rule">
+                            <i class="fas fa-mobile-alt grey-picto"></i>
+                            <p>Choisissez un restaurant</p>
+                        </div>
                     </div>
-                    <div class=howitworks-block>
+                    <div class="howitworks-block grey-bg">
                         <p class="howitworks-list">2</p>
-                        <p class="howitworks-rule"><i class="fas fa-list-ul"></i>Composez votre menu</p>
+                        <p class="howitworks-rule"><i class="fas fa-list-ul grey-picto"></i>Composez votre menu</p>
                     </div>
-                    <div class=howitworks-block>
+                    <div class="howitworks-block violet-bg">
                         <p class="howitworks-list">3</p>
-                        <p class="howitworks-rule"><i class="fas fa-store"></i>Dégustez au restaurant</p>
+                        <p class="howitworks-rule"><i class="fas fa-store resto-picto"></i>Dégustez au restaurant</p>
                     </div>
             </section>
             <section class="restaurants">
                 <h2 id="restaurants">Restaurants</h2>
                 <div class="restaurants-menu">
                     <img class="restaurants-img" src="images/restaurants/palettegout.jpg" alt="La palette du goût">
-                    <div class="restaurants-new">Nouveau</div>
+                    <!-- <div class="restaurants-new">Nouveau</div> -->
                     <div class="restaurants-info">
                         <p><strong>La palette du goût</strong></p>
                         <i class="far fa-heart heart"></i>
@@ -66,12 +69,14 @@
                     </div>
                 </div>
                 <div class="restaurants-menu">
+                    <a href="delicesens.html">
                     <img class="restaurants-img" src="images/restaurants/delicesens.jpg" alt="Le délice des sens">
                     <div class="restaurants-info">
                         <p><strong>Le délice des sens</strong></p>
                         <i class="far fa-heart heart"></i>
                     <p>Folie-Méricourt</p>
                     </div>
+                    </a>
                 </div>
             </section>
         </main>
