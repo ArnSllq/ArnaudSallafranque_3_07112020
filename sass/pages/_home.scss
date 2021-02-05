@@ -43,6 +43,8 @@ h2 {
         margin-right: auto;
         margin-bottom: 0px;
         margin-top: 0px;
+
+        @include gradient-button;
     }
     .booking-explore a {
         text-decoration: none;
