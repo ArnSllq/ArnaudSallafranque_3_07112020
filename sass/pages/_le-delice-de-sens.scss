@@ -1,8 +1,10 @@
+.greypage {
+    background-color: $bgcolor;
+}
 .delice-sens {
     width: auto;
     height: 250px;
     position: relative;
-    background-color: $bgcolor;
 
     img {
         width: 100%;
@@ -69,6 +71,7 @@
     border-radius: 15px;
     background-color: white;
     margin-bottom: 20px;
+    @include shadow-element;
 
     >.main-course {
         width: 90%;
@@ -114,5 +117,6 @@
         font-weight: bold;
 
         @include gradient-button;
+        box-shadow: 10px 15px 10px -15px #808080;  
     }
 }

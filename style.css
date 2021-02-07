@@ -23,10 +23,11 @@ header .arrow {
 .location {
   background-color: gainsboro;
   width: 100%;
-  height: 40px;
+  height: 50px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: inset 0px 15px 5px -15px #808080;
 }
 
 .location-logo {
@@ -35,13 +36,14 @@ header .arrow {
 }
 
 .location-area {
-  padding: 11px 0px 11px 0px;
+  padding: 0px 0px 0px 0px;
   border-style: none;
   width: 150px;
   height: 40px;
   background-color: gainsboro;
   font-weight: bold;
   font-size: 15px;
+  margin-top: 5px;
 }
 
 footer {
@@ -122,6 +124,7 @@ h2 {
   margin-bottom: 0px;
   margin-top: 0px;
   background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  box-shadow: 10px 15px 10px -15px #808080;
 }
 .booking .booking-explore a {
   text-decoration: none;
@@ -143,6 +146,7 @@ h2 {
   margin-bottom: 15px;
   margin-left: 15px;
   margin-right: 10px;
+  box-shadow: 0 0.9px 2.7px rgba(0, 0, 0, 0.035), 0 2.5px 7.5px rgba(0, 0, 0, 0.05), 0 6px 18.1px rgba(0, 0, 0, 0.065), 0 20px 60px rgba(0, 0, 0, 0.1);
 }
 .howitworks p {
   font-weight: bold;
@@ -195,12 +199,12 @@ h2 {
 .restaurants .restaurants-menu {
   border-radius: 25px;
   position: relative;
-  background-color: crimson;
   margin-bottom: 15px;
   margin-left: 15px;
   margin-right: 15px;
   width: auto;
   height: 240px;
+  box-shadow: 0 0.9px 2.7px rgba(0, 0, 0, 0.035), 0 2.5px 7.5px rgba(0, 0, 0, 0.05), 0 6px 18.1px rgba(0, 0, 0, 0.065), 0 20px 60px rgba(0, 0, 0, 0.1);
 }
 .restaurants a {
   text-decoration: none;
@@ -246,11 +250,14 @@ h2 {
   font-size: 20px;
 }
 
+.greypage {
+  background-color: #F6F6F6;
+}
+
 .delice-sens {
   width: auto;
   height: 250px;
   position: relative;
-  background-color: #F6F6F6;
 }
 .delice-sens img {
   width: 100%;
@@ -311,6 +318,7 @@ h2 {
   border-radius: 15px;
   background-color: white;
   margin-bottom: 20px;
+  box-shadow: 0 0.9px 2.7px rgba(0, 0, 0, 0.035), 0 2.5px 7.5px rgba(0, 0, 0, 0.05), 0 6px 18.1px rgba(0, 0, 0, 0.065), 0 20px 60px rgba(0, 0, 0, 0.1);
 }
 .plates > .main-course {
   width: 90%;
@@ -353,6 +361,7 @@ h2 {
   color: white;
   font-weight: bold;
   background-image: linear-gradient(170deg, #FF79DA, #9356DC);
+  box-shadow: 10px 15px 10px -15px #808080;
 }
 
 /*# sourceMappingURL=style.css.map */
