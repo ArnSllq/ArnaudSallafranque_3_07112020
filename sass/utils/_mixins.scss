@@ -3,9 +3,9 @@
 }
 
 @mixin shadow-element {
-    box-shadow:
-  0 0.9px 2.7px rgba(0, 0, 0, 0.035),
-  0 2.5px 7.5px rgba(0, 0, 0, 0.05),
-  0 6px 18.1px rgba(0, 0, 0, 0.065),
-  0 20px 60px rgba(0, 0, 0, 0.1);
+  box-shadow:
+  0 1.3px 2.5px -10px rgba(0, 0, 0, 0.15),
+  0 10px 20px -10px rgba(0, 0, 0, 0.3)
+;
+;
 }
