@@ -1,0 +1,62 @@
+// .plates:hover {
+//     transform: scaleX(0);
+// }
+
+// .plates { 
+//     transform-origin: 0% 50%;
+//     transform: scaleX(1);
+//     transition: transform 500ms;
+// }
+
+.first-plate {
+     h2 {
+         animation: animmenu 1000ms;
+        }
+
+    .plates {
+        animation: animmenu 1000ms;
+        animation-delay: 100ms;
+        animation-fill-mode: backwards;
+    }
+}
+
+.second-plate {
+    h2 {
+        animation: animmenu 1000ms;
+        animation-delay: 300ms;
+        animation-fill-mode: backwards;
+    }
+
+    .plates {
+        animation: animmenu 1000ms;
+        animation-delay: 400ms;
+        animation-fill-mode: backwards;
+    }
+}
+
+.third-plate {
+    h2 {
+        animation: animmenu 1000ms;
+        animation-delay: 600ms;
+        animation-fill-mode: backwards;
+    }
+
+    .plates {
+        animation: animmenu 1000ms;
+        animation-delay: 700ms;
+        animation-fill-mode: backwards;
+    }
+}
+
+@keyframes animmenu {
+    0% {
+        transform: translateY(9999px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
