@@ -1,11 +1,10 @@
 @mixin gradient-button {
-    background-image: linear-gradient(170deg, $secondary, $primary) ;
+    background-image: linear-gradient(to bottom right, $secondary, $primary) ;
 }
 
 @mixin shadow-element {
   box-shadow:
   0 1.3px 2.5px -10px rgba(0, 0, 0, 0.15),
-  0 10px 20px -10px rgba(0, 0, 0, 0.3)
-;
-;
+  0 10px 20px -10px rgba(0, 0, 0, 0.3);
+
 }
