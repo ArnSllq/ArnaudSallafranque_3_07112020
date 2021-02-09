@@ -40,7 +40,12 @@
     transform: translateY(0px);
   }
 }
-.heart:hover {
+.heart {
+  transform-origin: 50% 100%;
+  font-family: "Font Awesome 5 Free";
+}
+
+.heart:active {
   font-weight: 900;
   background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
   background: linear-gradient(bottom, #FF79DA, #9356DC);
@@ -48,7 +53,6 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animheart 500ms;
-  transform-origin: 50% 100%;
 }
 
 @keyframes animheart {
