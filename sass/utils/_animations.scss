@@ -3,7 +3,7 @@
          animation: animmenu 1000ms;
         }
 
-    .plates {
+    .check-anim {
         animation: animmenu 1000ms;
         animation-delay: 100ms;
         animation-fill-mode: backwards;
@@ -17,7 +17,7 @@
         animation-fill-mode: backwards;
     }
 
-    .plates {
+    .check-anim {
         animation: animmenu 1000ms;
         animation-delay: 400ms;
         animation-fill-mode: backwards;
@@ -31,7 +31,7 @@
         animation-fill-mode: backwards;
     }
 
-    .plates {
+    .check-anim {
         animation: animmenu 1000ms;
         animation-delay: 700ms;
         animation-fill-mode: backwards;
@@ -71,5 +71,48 @@
     }
     100% {
         transform: scaleY(1);
+    }
+}
+
+.check-anim:hover {
+
+    .round-check {
+        display: block;
+        animation : menu2 1000ms;
+        transform-origin: 100% 50%;
+    }
+    .price {
+        animation : price-move 1000ms;
+        animation-fill-mode: forwards;
+    }
+    .green-check {
+        animation : animation-menu 1500ms;
+        animation-iteration-count: 1;
+    }
+}
+
+
+@keyframes animation-menu {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1080deg);
+    }
+}
+@keyframes menu2 {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+@keyframes price-move {
+    0% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(-10px);
     }
 }

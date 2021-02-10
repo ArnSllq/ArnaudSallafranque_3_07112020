@@ -1,7 +1,7 @@
 .first-plate h2 {
   animation: animmenu 1000ms;
 }
-.first-plate .plates {
+.first-plate .check-anim {
   animation: animmenu 1000ms;
   animation-delay: 100ms;
   animation-fill-mode: backwards;
@@ -12,7 +12,7 @@
   animation-delay: 300ms;
   animation-fill-mode: backwards;
 }
-.second-plate .plates {
+.second-plate .check-anim {
   animation: animmenu 1000ms;
   animation-delay: 400ms;
   animation-fill-mode: backwards;
@@ -23,7 +23,7 @@
   animation-delay: 600ms;
   animation-fill-mode: backwards;
 }
-.third-plate .plates {
+.third-plate .check-anim {
   animation: animmenu 1000ms;
   animation-delay: 700ms;
   animation-fill-mode: backwards;
@@ -61,6 +61,44 @@
   }
   100% {
     transform: scaleY(1);
+  }
+}
+.check-anim:hover .round-check {
+  display: block;
+  animation: menu2 1000ms;
+  transform-origin: 100% 50%;
+}
+.check-anim:hover .price {
+  animation: price-move 1000ms;
+  animation-fill-mode: forwards;
+}
+.check-anim:hover .green-check {
+  animation: animation-menu 1500ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes animation-menu {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}
+@keyframes menu2 {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes price-move {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(-10px);
   }
 }
 @font-face {
@@ -370,10 +408,10 @@ h2 {
   border-color: #99E2D0;
 }
 
-.plates {
+.check-anim {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   width: 100%;
   height: auto;
@@ -382,16 +420,33 @@ h2 {
   margin-bottom: 20px;
   box-shadow: 0 1.3px 2.5px -10px rgba(0, 0, 0, 0.15), 0 10px 20px -10px rgba(0, 0, 0, 0.3);
 }
+
+.plates {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+}
+.plates > p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .plates > .main-course {
-  width: 90%;
+  width: 100%;
+  height: 20px;
   margin-left: 10px;
   margin-bottom: 5px;
   margin-top: 10px;
   font-size: 17px;
   font-weight: bold;
+  overflow: hidden;
 }
 .plates > .trimming {
   width: 80%;
+  height: 20px;
   margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -399,12 +454,27 @@ h2 {
 }
 .plates > .price {
   width: 10%;
+  height: 20px;
   text-align: right;
   font-size: 15px;
   font-weight: bold;
   margin-right: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
+}
+
+.round-check {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  background-color: #99E2D0;
+  display: none;
+  border-radius: 0px 15px 15px 0px;
+}
+.round-check .green-check {
+  color: white;
+  font-size: 40px;
+  line-height: 70px;
 }
 
 .order {
