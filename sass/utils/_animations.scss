@@ -55,7 +55,7 @@
     font-family: 'Font Awesome\ 5 Free';
 }
 
-.heart:hover {
+.heart:active {
     font-weight: 900;
     background: -webkit-linear-gradient(bottom, $secondary, $primary);
     background: linear-gradient(bottom, $secondary, $primary);
@@ -63,8 +63,6 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animheart 500ms;
-
-
 }
 
 @keyframes animheart {

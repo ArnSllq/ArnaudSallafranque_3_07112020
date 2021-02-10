@@ -45,7 +45,7 @@
   font-family: "Font Awesome 5 Free";
 }
 
-.heart:hover {
+.heart:active {
   font-weight: 900;
   background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
   background: linear-gradient(bottom, #FF79DA, #9356DC);
