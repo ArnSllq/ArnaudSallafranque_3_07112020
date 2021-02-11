@@ -76,6 +76,12 @@
   animation: animation-menu 1500ms;
   animation-iteration-count: 1;
 }
+.check-anim:hover .main-course {
+  width: 70%;
+}
+.check-anim:hover .trimming {
+  width: 70%;
+}
 
 @keyframes animation-menu {
   0% {
@@ -396,6 +402,9 @@ h2 {
   font-size: 18px;
   margin-top: 0px;
   font-weight: normal;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .menu h2:after {
   content: "";
@@ -431,30 +440,28 @@ h2 {
   height: 70px;
 }
 .plates .main-course {
-  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 50%;
   height: 20px;
   margin-left: 10px;
   margin-bottom: 5px;
   margin-top: 10px;
   font-size: 17px;
   font-weight: bold;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .plates .trimming {
-  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 50%;
   height: 20px;
   margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
   font-size: 15px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .plates .price {
-  width: 10%;
+  width: 30px;
   height: 20px;
   text-align: right;
   font-size: 15px;
@@ -466,16 +473,16 @@ h2 {
 
 .round-check {
   display: none;
-  width: 70px;
-  height: 70px;
   text-align: center;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
 }
 .round-check .green-check {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
 .order {
