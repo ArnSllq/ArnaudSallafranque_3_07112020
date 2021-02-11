@@ -76,12 +76,6 @@
   animation: animation-menu 1500ms;
   animation-iteration-count: 1;
 }
-.check-anim:hover .main-course {
-  width: 70%;
-}
-.check-anim:hover .trimming {
-  width: 70%;
-}
 
 @keyframes animation-menu {
   0% {
@@ -440,9 +434,10 @@ h2 {
   height: 70px;
 }
 .plates .main-course {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 50%;
+  width: 70%;
   height: 20px;
   margin-left: 10px;
   margin-bottom: 5px;
@@ -451,9 +446,10 @@ h2 {
   font-weight: bold;
 }
 .plates .trimming {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 50%;
+  width: 70%;
   height: 20px;
   margin-left: 10px;
   margin-top: 5px;
@@ -481,7 +477,7 @@ h2 {
   color: white;
   font-size: 30px;
   line-height: 70px;
-  width: 70px;
+  width: 50px;
   height: 70px;
 }
 
