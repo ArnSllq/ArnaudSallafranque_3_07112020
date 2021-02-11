@@ -390,8 +390,7 @@ h2 {
 
 .menu {
   background-color: #F6F6F6;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
 }
 .menu h2 {
   font-size: 18px;
@@ -413,11 +412,13 @@ h2 {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 100%;
-  height: auto;
+  width: 90%;
+  height: 70px;
   border-radius: 15px;
   background-color: white;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0 1.3px 2.5px -10px rgba(0, 0, 0, 0.15), 0 10px 20px -10px rgba(0, 0, 0, 0.3);
 }
 
@@ -429,30 +430,30 @@ h2 {
   width: 100%;
   height: 70px;
 }
-.plates > p {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.plates > .main-course {
-  width: 100%;
+.plates .main-course {
+  width: 80%;
   height: 20px;
   margin-left: 10px;
   margin-bottom: 5px;
   margin-top: 10px;
   font-size: 17px;
   font-weight: bold;
+  text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
-.plates > .trimming {
+.plates .trimming {
   width: 80%;
   height: 20px;
   margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
   font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.plates > .price {
+.plates .price {
   width: 10%;
   height: 20px;
   text-align: right;
@@ -464,11 +465,11 @@ h2 {
 }
 
 .round-check {
+  display: none;
   width: 70px;
   height: 70px;
   text-align: center;
   background-color: #99E2D0;
-  display: none;
   border-radius: 0px 15px 15px 0px;
 }
 .round-check .green-check {
