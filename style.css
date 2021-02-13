@@ -65,16 +65,16 @@
 }
 .check-anim:hover .round-check {
   display: block;
-  animation: menu2 1000ms;
+  animation: menu2 750ms;
   transform-origin: 100% 50%;
 }
-.check-anim:hover .price {
-  animation: price-move 1000ms;
-  animation-fill-mode: forwards;
-}
 .check-anim:hover .green-check {
-  animation: animation-menu 1500ms;
+  animation: animation-menu 1000ms;
   animation-iteration-count: 1;
+}
+
+.check-anim:hover {
+  padding-right: 70px;
 }
 
 @keyframes animation-menu {
@@ -82,7 +82,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(1080deg);
+    transform: rotate(720deg);
   }
 }
 @keyframes menu2 {
@@ -411,74 +411,73 @@ h2 {
 }
 
 .check-anim {
+  border-radius: 15px;
+  position: relative;
+  height: 70px;
+  transition: padding-right 750ms ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 1.3px 2.5px -10px rgba(0, 0, 0, 0.15), 0 10px 20px -10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.check-anim .plates {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+.check-anim .plates .main-course {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0px;
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.check-anim .details {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 90%;
-  height: 70px;
-  border-radius: 15px;
-  background-color: white;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 1.3px 2.5px -10px rgba(0, 0, 0, 0.15), 0 10px 20px -10px rgba(0, 0, 0, 0.3);
+  align-items: center;
 }
-
-.plates {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.check-anim .details .trimming {
+  margin: 0px;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 100%;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.check-anim .details .price {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0px;
+  margin-right: 5px;
+}
+.check-anim .round-check {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 70px;
   height: 70px;
-}
-.plates .main-course {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 70%;
-  height: 20px;
-  margin-left: 10px;
-  margin-bottom: 5px;
-  margin-top: 10px;
-  font-size: 17px;
-  font-weight: bold;
-}
-.plates .trimming {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 70%;
-  height: 20px;
-  margin-left: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-size: 15px;
-}
-.plates .price {
-  width: 30px;
-  height: 20px;
-  text-align: right;
-  font-size: 15px;
-  font-weight: bold;
-  margin-right: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.round-check {
-  display: none;
   text-align: center;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
+  transform: translateX(100%);
+  transition: transform 750ms ease-in-out;
 }
-.round-check .green-check {
+.check-anim .round-check .green-check {
   color: white;
   font-size: 30px;
   line-height: 70px;
-  width: 50px;
-  height: 70px;
 }
 
 .order {
@@ -498,6 +497,10 @@ h2 {
   font-weight: bold;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 10px 15px 10px -15px #808080;
+}
+
+.check-anim:hover > .round-check {
+  transform: translateX(0%);
 }
 
 /*# sourceMappingURL=style.css.map */

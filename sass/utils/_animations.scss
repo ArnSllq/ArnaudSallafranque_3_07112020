@@ -75,19 +75,19 @@
 }
 
 .check-anim:hover {
+
     .round-check {
         display: block;
-        animation : menu2 1000ms;
+        animation : menu2 750ms;
         transform-origin: 100% 50%;
     }
-    .price {
-        animation : price-move 1000ms;
-        animation-fill-mode: forwards;
-    }
     .green-check {
-        animation : animation-menu 1500ms;
+        animation : animation-menu 1000ms;
         animation-iteration-count: 1;
     }
+}
+.check-anim:hover {
+    padding-right: 70px;
 }
 
 
@@ -96,7 +96,7 @@
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(1080deg);
+        transform: rotate(720deg);
     }
 }
 @keyframes menu2 {
