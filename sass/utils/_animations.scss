@@ -1,3 +1,49 @@
+.loading-dot {
+    animation: loader-alpha 3000ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loader-alpha {
+      0% { 
+        }
+        80% {
+            opacity: 1; 
+        }
+
+        99% {
+           transform: translateX(0%); 
+
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+}
+
+
+
+  .dot {
+    animation: bouncing-dot 1500ms infinite ease-in-out;
+    animation-fill-mode: both;
+  }
+  
+  .dot2 {
+      animation-delay: 100ms;
+  }
+
+  .dot3 {
+      animation-delay: 200ms;
+  }
+
+  @keyframes bouncing-dot {
+    0%{
+          transform: translateY(0);
+      }
+    50% {
+          transform: translateY(-150px);
+      }
+  }
+
 .first-plate {
      h2 {
          animation: animmenu 1000ms;
@@ -13,13 +59,13 @@
 .second-plate {
     h2 {
         animation: animmenu 1000ms;
-        animation-delay: 300ms;
+        animation-delay: 500ms;
         animation-fill-mode: backwards;
     }
 
     .check-anim {
         animation: animmenu 1000ms;
-        animation-delay: 400ms;
+        animation-delay: 600ms;
         animation-fill-mode: backwards;
     }
 }
@@ -27,13 +73,13 @@
 .third-plate {
     h2 {
         animation: animmenu 1000ms;
-        animation-delay: 600ms;
+        animation-delay: 1000ms;
         animation-fill-mode: backwards;
     }
 
     .check-anim {
         animation: animmenu 1000ms;
-        animation-delay: 700ms;
+        animation-delay: 1100ms;
         animation-fill-mode: backwards;
     }
 }
@@ -62,7 +108,8 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: animheart 500ms;
+    animation: animheart 200ms ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 @keyframes animheart {
@@ -75,19 +122,15 @@
 }
 
 .check-anim:hover {
-
+    padding-right: 70px;
+    
     .round-check {
-        display: block;
-        animation : menu2 750ms;
-        transform-origin: 100% 50%;
+        transform: translateX(0%);
     }
     .green-check {
-        animation : animation-menu 1000ms;
+        animation : animation-menu 500ms;
         animation-iteration-count: 1;
     }
-}
-.check-anim:hover {
-    padding-right: 70px;
 }
 
 
@@ -99,19 +142,12 @@
         transform: rotate(720deg);
     }
 }
-@keyframes menu2 {
-    0% {
-        transform: scaleX(0);
-    }
-    100% {
-        transform: scaleX(1);
-    }
+
+.check-anim {
+    transition: padding-right 320ms ease-in-out;
 }
-@keyframes price-move {
-    0% {
-        transform: translateX(50px);
-    }
-    100% {
-        transform: translateX(-10px);
-    }
+
+.round-check{
+    transform: translateX(100%);
+    transition: transform 300ms ease-in-out;
 }

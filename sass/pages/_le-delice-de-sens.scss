@@ -63,7 +63,7 @@
     border-radius: 15px;
     position: relative;
     height: 70px;
-    transition: padding-right 750ms ease-in-out;
+
     overflow: hidden;
     @include shadow-element;
     margin-bottom: 10px;
@@ -123,8 +123,7 @@
         text-align: center;
         background-color:$tertiary;
         border-radius: 0px 15px 15px 0px;
-        transform: translateX(100%);
-        transition: transform 750ms ease-in-out;
+
 
         .green-check {
             color: white;
@@ -140,7 +139,6 @@
     margin-right: auto;
     margin-bottom: 20px;
 
-
     .order-button {
         text-align: center;
         border-style: none;
@@ -155,32 +153,6 @@
         box-shadow: 10px 15px 10px -15px #808080;  
     }
 }
-.check-anim:hover>.round-check {
-    transform: translateX(0%);
-}
 
-
-
-// .round-check::before {
-//     text-align: center;
-//     display: block;
-//     width: 70px;
-//     height: 70px;
-//     line-height: 70px;
-//     transform: rotate(0deg);
-// }
-
-// .round-check::after {
-//     display: block;
-//     content: '';
-//     position: absolute;
-//     height: 20px;
-//     width: 20px;
-//     border: 3px solid #fff;
-//     border-radius: 50%;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-// }
 
 

@@ -2,6 +2,10 @@
     background-image: linear-gradient(to bottom right, $secondary, $primary) ;
 }
 
+@mixin gradient-button2 {
+  background-image: linear-gradient(to bottom right, blue, crimson) ;
+}
+
 @mixin shadow-element {
   box-shadow:
   0 1.3px 2.5px -10px rgba(0, 0, 0, 0.15),

@@ -1,3 +1,41 @@
+.loading-dot {
+  animation: loader-alpha 3000ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader-alpha {
+  80% {
+    opacity: 1;
+  }
+  99% {
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+.dot {
+  animation: bouncing-dot 1500ms infinite ease-in-out;
+  animation-fill-mode: both;
+}
+
+.dot2 {
+  animation-delay: 100ms;
+}
+
+.dot3 {
+  animation-delay: 200ms;
+}
+
+@keyframes bouncing-dot {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-150px);
+  }
+}
 .first-plate h2 {
   animation: animmenu 1000ms;
 }
@@ -9,23 +47,23 @@
 
 .second-plate h2 {
   animation: animmenu 1000ms;
-  animation-delay: 300ms;
+  animation-delay: 500ms;
   animation-fill-mode: backwards;
 }
 .second-plate .check-anim {
   animation: animmenu 1000ms;
-  animation-delay: 400ms;
+  animation-delay: 600ms;
   animation-fill-mode: backwards;
 }
 
 .third-plate h2 {
   animation: animmenu 1000ms;
-  animation-delay: 600ms;
+  animation-delay: 1000ms;
   animation-fill-mode: backwards;
 }
 .third-plate .check-anim {
   animation: animmenu 1000ms;
-  animation-delay: 700ms;
+  animation-delay: 1100ms;
   animation-fill-mode: backwards;
 }
 
@@ -52,7 +90,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animheart 500ms;
+  animation: animheart 200ms ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 @keyframes animheart {
@@ -63,18 +102,15 @@
     transform: scaleY(1);
   }
 }
-.check-anim:hover .round-check {
-  display: block;
-  animation: menu2 750ms;
-  transform-origin: 100% 50%;
-}
-.check-anim:hover .green-check {
-  animation: animation-menu 1000ms;
-  animation-iteration-count: 1;
-}
-
 .check-anim:hover {
   padding-right: 70px;
+}
+.check-anim:hover .round-check {
+  transform: translateX(0%);
+}
+.check-anim:hover .green-check {
+  animation: animation-menu 500ms;
+  animation-iteration-count: 1;
 }
 
 @keyframes animation-menu {
@@ -85,22 +121,15 @@
     transform: rotate(720deg);
   }
 }
-@keyframes menu2 {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
+.check-anim {
+  transition: padding-right 320ms ease-in-out;
 }
-@keyframes price-move {
-  0% {
-    transform: translateX(50px);
-  }
-  100% {
-    transform: translateX(-10px);
-  }
+
+.round-check {
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
 }
+
 @font-face {
   font-family: "Shrikhand";
   src: url("font/shrikhand/Shrikhand-Regular.ttf") format("truetype");
@@ -179,6 +208,11 @@ footer li {
 }
 footer .footer-picto {
   margin-right: 10px;
+}
+
+html {
+  position: relative;
+  z-index: 1;
 }
 
 body {
@@ -353,6 +387,45 @@ h2 {
   font-size: 20px;
 }
 
+.loading-dot {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #F6F6F6;
+  z-index: 2;
+}
+
+.three-circles {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 50px;
+  position: relative;
+  top: 280px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.dot1 {
+  background-color: #9356DC;
+}
+
+.dot2 {
+  background-color: #FF79DA;
+}
+
+.dot3 {
+  background-color: #99E2D0;
+}
+
 .greypage {
   background-color: #F6F6F6;
 }
@@ -414,7 +487,6 @@ h2 {
   border-radius: 15px;
   position: relative;
   height: 70px;
-  transition: padding-right 750ms ease-in-out;
   overflow: hidden;
   box-shadow: 0 1.3px 2.5px -10px rgba(0, 0, 0, 0.15), 0 10px 20px -10px rgba(0, 0, 0, 0.3);
   margin-bottom: 10px;
@@ -471,8 +543,6 @@ h2 {
   text-align: center;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
-  transform: translateX(100%);
-  transition: transform 750ms ease-in-out;
 }
 .check-anim .round-check .green-check {
   color: white;
@@ -497,10 +567,6 @@ h2 {
   font-weight: bold;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 10px 15px 10px -15px #808080;
-}
-
-.check-anim:hover > .round-check {
-  transform: translateX(0%);
 }
 
 /*# sourceMappingURL=style.css.map */
