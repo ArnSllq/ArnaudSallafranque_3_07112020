@@ -1,26 +1,16 @@
 .loading-dot {
-    animation: loader-alpha 3000ms ease-in-out;
+    animation: loader-alpha 3000ms;
     animation-fill-mode: forwards;
 }
 
 @keyframes loader-alpha {
-      0% { 
-        }
-        80% {
-            opacity: 1; 
-        }
-
-        99% {
-           transform: translateX(0%); 
-
-        }
+    0%, 99%{
+        transform: scaleY(1);
+    }
         100% {
-            opacity: 0;
-            transform: translateX(100%);
+            transform: scaleY(0);
         }
 }
-
-
 
   .dot {
     animation: bouncing-dot 1500ms infinite ease-in-out;
@@ -124,7 +114,7 @@
 .check-anim:hover {
     padding-right: 70px;
     
-    .round-check {
+    >.round-check {
         transform: translateX(0%);
     }
     .green-check {
@@ -144,10 +134,18 @@
 }
 
 .check-anim {
-    transition: padding-right 320ms ease-in-out;
+    transition: padding-right 250ms ease-in-out;
 }
 
 .round-check{
     transform: translateX(100%);
     transition: transform 300ms ease-in-out;
+}
+
+p.booking-explore:hover {
+    @include lighter-button;
+}
+
+div.order>.order-button:hover {
+    @include lighter-button;
 }
