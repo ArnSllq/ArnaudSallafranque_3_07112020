@@ -1,6 +1,7 @@
 .loading-dot {
     animation: loader-alpha 3000ms;
     animation-fill-mode: forwards;
+    overflow: hidden;
 }
 
 @keyframes loader-alpha {
@@ -33,6 +34,22 @@
     50% {
           transform: translateY(-150px);
       }
+  }
+
+html {
+    animation: loading 500ms ease-in-out;
+    animation-delay: 2950ms;
+}
+
+  @keyframes loading {
+      0%{ 
+          transform: scale(0);
+          opacity: 0;
+      }
+      100% {
+          transform: scale(1);
+      }
+
   }
 
 .first-plate {
