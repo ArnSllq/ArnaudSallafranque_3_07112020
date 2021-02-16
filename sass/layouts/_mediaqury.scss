@@ -1,0 +1,68 @@
+@media all and (min-width : 1025px) 
+{
+    section.howitworks {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section.restaurants {
+        h2 {
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    
+        >.restaurants-menu {
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    div.restaurant-name {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0px;
+        right: 0px;
+    }
+
+    div.first-plate {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.second-plate {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+
+    div.third-plate {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    footer 
+    {
+        h3 
+        {
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        ul 
+        {
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+

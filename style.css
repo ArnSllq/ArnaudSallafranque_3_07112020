@@ -6,6 +6,7 @@
 @keyframes loader-alpha {
   0%, 99% {
     transform: scaleY(1);
+    cursor: progress;
   }
   100% {
     transform: scaleY(0);
@@ -134,6 +135,7 @@ p.booking-explore:hover {
 div.order > .order-button:hover {
   background: linear-gradient(to bottom right, #ff93e1, #a16be0);
   box-shadow: 0 1.8px 2.2px rgba(0, 0, 0, 0.056), 0 4.3px 5.3px rgba(0, 0, 0, 0.081), 0 8.1px 10px rgba(0, 0, 0, 0.1), 0 14.5px 17.9px rgba(0, 0, 0, 0.119), 0 27.2px 33.4px rgba(0, 0, 0, 0.144), 0 65px 80px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 @font-face {
@@ -216,6 +218,61 @@ footer .footer-picto {
   margin-right: 10px;
 }
 
+@media all and (min-width: 1025px) {
+  section.howitworks {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.restaurants h2 {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section.restaurants > .restaurants-menu {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.restaurant-name {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+  }
+
+  div.first-plate {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.second-plate {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.third-plate {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer h3 {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer ul {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 body {
   font-family: "Roboto";
   margin: auto;
@@ -272,6 +329,7 @@ h2 {
 .howitworks {
   margin-left: 15px;
   margin-right: 15px;
+  background-color: white;
 }
 .howitworks .howitworks-block {
   border-width: 1px;
@@ -298,15 +356,16 @@ h2 {
   margin-left: -10px;
 }
 .howitworks .howitworks-rule {
-  width: 80%;
+  width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
 .howitworks .howitworks-rule p {
   width: 70%;
+  text-align: center;
 }
 
 .grey-bg {
@@ -328,6 +387,7 @@ h2 {
 .restaurants {
   background-color: #F6F6F6;
   width: 100%;
+  padding-bottom: 20px;
 }
 .restaurants h2 {
   padding-top: 20px;
@@ -426,52 +486,55 @@ h2 {
   background-color: #99E2D0;
 }
 
-.greypage {
+.grey-background {
   background-color: #F6F6F6;
 }
 
-.delice-sens {
+.restaurant-name-n-picture {
   width: auto;
   height: 250px;
   position: relative;
 }
-.delice-sens img {
+.restaurant-name-n-picture img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
-.delice-sens .restaurant-name {
+.restaurant-name-n-picture .restaurant-name {
   position: absolute;
   bottom: 10px;
   background-color: #F6F6F6;
   width: 100%;
+  height: 50px;
   border-radius: 20px;
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: space-between;
+  padding-top: 10px;
 }
-.delice-sens h1 {
+.restaurant-name-n-picture h1 {
   font-family: "Shrikhand";
   font-size: 25px;
+  margin: 0px;
   margin-left: 15px;
 }
-.delice-sens .heart {
+.restaurant-name-n-picture .heart {
   display: block;
-  margin-right: 20px;
   font-size: 20px;
+  margin: 0px;
+  margin-right: 15px;
 }
 
 .menu {
   background-color: #F6F6F6;
-  width: 100%;
 }
 .menu h2 {
   font-size: 18px;
   margin-top: 0px;
+  margin-left: 15px;
   font-weight: normal;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 }
 .menu h2:after {
   content: "";
@@ -490,6 +553,8 @@ h2 {
   overflow: hidden;
   box-shadow: 0 1.3px 2.5px -10px rgba(0, 0, 0, 0.15), 0 10px 20px -10px rgba(0, 0, 0, 0.3);
   margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
   padding-right: 0px;
 }
 .check-anim .plates {

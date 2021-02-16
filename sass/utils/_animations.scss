@@ -6,6 +6,7 @@
 @keyframes loader-alpha {
     0%, 99%{
         transform: scaleY(1);
+        cursor: progress;
     }
         100% {
             transform: scaleY(0);
@@ -148,4 +149,5 @@ p.booking-explore:hover {
 
 div.order>.order-button:hover {
     @include lighter-button;
+    cursor: pointer;
 }
