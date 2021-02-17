@@ -97,8 +97,8 @@
 
 .heart:active {
   font-weight: 900;
-  background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
-  background: linear-gradient(bottom, #FF79DA, #9356DC);
+  background: -webkit-linear-gradient(to bottom, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

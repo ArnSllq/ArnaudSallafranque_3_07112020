@@ -111,8 +111,8 @@
 
 .heart:active {
     font-weight: 900;
-    background: -webkit-linear-gradient(bottom, $secondary, $primary);
-    background: linear-gradient(bottom, $secondary, $primary);
+    background: -webkit-linear-gradient(to bottom, $secondary, $primary);
+    background: linear-gradient(to bottom, $secondary, $primary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
