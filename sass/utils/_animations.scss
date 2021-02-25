@@ -110,10 +110,8 @@
 
 .heart:active {
     font-weight: 900;
-    background: -webkit-linear-gradient(to bottom, $secondary, $primary);
     background: linear-gradient(to bottom, $secondary, $primary);
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animheart 200ms ease-in-out;
     animation-fill-mode: forwards;
