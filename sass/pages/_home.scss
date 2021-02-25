@@ -127,6 +127,13 @@ h2 {
         width: auto;
         height: 240px;
         @include shadow-element;
+
+        .heart {
+            font-size: 20px;
+            position: absolute;
+            bottom: 40px;
+            right: 15px;
+        }
     }
 
     a {
@@ -155,7 +162,7 @@ h2 {
         margin-left: 15px;
         margin-top: 0px;
         margin-bottom: 0px;
-        width: 50%;
+        width: 100%;
     }
     strong {
         font-weight: bold;
@@ -169,10 +176,7 @@ h2 {
         height: 60px;
         width: 100%;
         }
-        .heart {
-            margin-right: 15px;
-            font-size: 20px;
-        }
+
 }
 
 .loading-dot {

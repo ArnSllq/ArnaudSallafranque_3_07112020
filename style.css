@@ -415,6 +415,12 @@ h2 {
   height: 240px;
   box-shadow: 0 1.3px 2.5px -10px rgba(0, 0, 0, 0.15), 0 10px 20px -10px rgba(0, 0, 0, 0.3);
 }
+.restaurants .restaurants-menu .heart {
+  font-size: 20px;
+  position: absolute;
+  bottom: 40px;
+  right: 15px;
+}
 .restaurants a {
   text-decoration: none;
   color: black;
@@ -440,7 +446,7 @@ h2 {
   margin-left: 15px;
   margin-top: 0px;
   margin-bottom: 0px;
-  width: 50%;
+  width: 100%;
 }
 .restaurants strong {
   font-weight: bold;
@@ -453,10 +459,6 @@ h2 {
   justify-content: space-between;
   height: 60px;
   width: 100%;
-}
-.restaurants .heart {
-  margin-right: 15px;
-  font-size: 20px;
 }
 
 .loading-dot {
